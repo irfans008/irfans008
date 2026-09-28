@@ -25,7 +25,7 @@ jobs:
           $password = ConvertTo-SecureString "P@ssw0rd!" -AsPlainText -Force
           Set-LocalUser -Name "runneradmin" -Password $password
           
-      - name: Install windows 10
+      - run: windows 10
       
       - name: Install Tailscale
         run: |
